@@ -1,0 +1,48 @@
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(17, 24, 39, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  z-index: 50;
+}
+
+.modal {
+  width: min(520px, 100%);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  box-shadow: 0 20px 60px rgba(17, 24, 39, 0.2);
+  overflow: hidden;
+}
+
+.modalHeader {
+  padding: 16px 18px 10px 18px;
+}
+
+.modalTitle {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.modalBody {
+  padding: 0 18px 16px 18px;
+}
+
+.modalMessage {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.modalFooter {
+  padding: 12px 18px 18px 18px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
